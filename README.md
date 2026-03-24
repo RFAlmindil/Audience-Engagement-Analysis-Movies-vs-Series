@@ -1,34 +1,26 @@
-# Audience Behavior Analysis Project (3.7M Records)
-**End-to-End Data Analysis: From Python Cleaning to Tableau Dashboards**
+# Strategic Audience Engagement & Churn Analysis (3.7M Records)
+**High-Scale Data Analysis: From Python Pipelines to Tableau Insights**
 
-## Project Overview
-This project analyzes a large-scale viewership dataset containing over **3.7 million records**. The goal was to compare engagement patterns between **Movies** and **Series** and identify peak viewing trends through a structured data workflow.
+## Executive Summary
+This project analyzes a massive dataset of **3.7 million records** to understand viewership patterns and "Content Churn" (programs users start but don't finish). By leveraging **Python** for heavy-duty data cleaning and **Tableau** for interactive BI, I identified key engagement drivers across Movies and Series.
 
-## Project Workflow (Step-by-Step)
+## Technical Workflow (Python-Driven)
+* **High-Scale Data Cleaning:** Used **Python (Pandas/NumPy)** to process 3.7M+ records, optimizing memory and handling missing data/formatting durations.
+* **Churn Analysis (High Churn):** Developed logic to identify content with low completion rates (e.g., *Rebel in the Rye*, *Bad Teacher*) to provide strategic recommendations.
+* **Data Aggregation:** Calculated **Average Viewing Durations** to ensure a fair comparison between episodic series and standalone movies.
+* **BI Integration:** Engineered the final dataset and exported it via `to_csv()` for seamless visualization in **Tableau**.
 
-### 1. Data Cleaning & Preparation (Python)
-* Used **Python** (Pandas/NumPy) to process and clean the 3.7M record dataset.
-* Handled missing values and standardized duration metrics into seconds for accurate comparison.
-* Optimized the data structure for seamless integration with SQL and Tableau.
+## Strategic Insights
+* **Engagement Leader:** Series/Episodes consistently outperform Movies in average session duration.
+* **Top Performers:** Analysis shows high loyalty for programs like *The Social Network* and *Coco* based on completion and rating metrics.
+* **Peak Windows:** Audience activity and ratings reach their highest points on **Wednesdays** and **Weekends**.
+* **Actionable Advice:** Identifying "High Churn" content allows platforms to optimize their library and marketing strategies.
 
-### 2. Data Aggregation & Analysis (SQL)
-* Developed **SQL queries** to aggregate viewership metrics by "Program Class" and "Program Name".
-* Applied **Average Duration Logic** to ensure a fair comparison between content types (e.g., episodic series vs. standalone movies).
-* Identified temporal trends by analyzing rating distributions across years and days of the week.
-
-### 3. Interactive Visualization (Tableau)
-* Developed a comprehensive **Interactive Dashboard** featuring:
-    * **Engagement Comparison:** Movies vs. Series.
-    * **Top 10 Programs:** Ranked by average viewer session.
-    * **Temporal Trends:** Average ratings by day of the week.
-* **Dynamic Interactivity:** Implemented **Action Filters** so that selecting a category (e.g., Series) updates all related charts automatically.
-
-## Key Insights
-* **Series Dominance:** Series/Episodes consistently show higher average viewing durations than movies.
-* **Peak Engagement:** Viewer activity reaches its highest points on **Wednesdays** and **Weekends**.
-* **Normalization Impact:** Using "Average" instead of "Sum" revealed that high-quality content like *Breaking Bad* leads in viewer loyalty, regardless of episode length.
+## Interactive Dashboard (Tableau)
+* **Dynamic Filtering:** Implemented **Action Filters** to allow stakeholders to toggle between Series and Movies instantly.
+* **Trend Analysis:** Visualized rating distributions across the week to identify prime time slots.
 
 ## Project Structure
-* `Audience_analysis.twbx`: The interactive Tableau Packaged Workbook.
-* `Data_Cleaning.ipynb`: Python scripts for data preparation.
-* `Analysis_Queries.sql`: SQL scripts used for data aggregation.
+* `stc_analysis.ipynb`: Full Python Notebook (Cleaning, Churn Analysis, Export).
+* `Audience_analysis.twbx`: Interactive Tableau Packaged Workbook.
+
