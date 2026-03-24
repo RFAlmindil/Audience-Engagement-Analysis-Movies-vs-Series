@@ -1,10 +1,10 @@
-# 📊 Audience Behavior Analysis Project (3.7M Records)
+# Audience Behavior Analysis Project (3.7M Records)
 **End-to-End Data Analysis: From Python Cleaning to Tableau Dashboards**
 
-## 📝Project Overview
+##Project Overview
 This project analyzes a large-scale viewership dataset containing over **3.7 million records**. The goal was to compare engagement patterns between **Movies** and **Series** and identify peak viewing trends through a structured data workflow.
 
-## 🛠 Project Workflow (Step-by-Step)
+## Project Workflow (Step-by-Step)
 
 ### 1. Data Cleaning & Preparation (Python)
 * Used **Python** (Pandas/NumPy) to process and clean the 3.7M record dataset.
